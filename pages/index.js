@@ -8,7 +8,7 @@ export default function Home() {
   
   return (
     <div className="    bg-[#ebeaef]">
-      <div className=" max-w-7xl mx-auto px5">
+      <div className=" max-w-7xl mx-auto px-5">
         <Header />
         <HomeMain/>
       </div>
