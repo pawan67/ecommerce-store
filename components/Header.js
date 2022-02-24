@@ -5,8 +5,9 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { BsCollection } from "react-icons/bs";
 import { BsPerson } from "react-icons/bs";
 import { useUserContext } from "../context/userContext";
-
+import data from "../data.json"
 const Header = () => {
+  console.log(data);
   const { page, setPage } = useUserContext();
   console.log(page);
   return (
@@ -30,7 +31,7 @@ const Header = () => {
           />
         </div>
       </div>
-      <div className=" fixed  left-5 right-5 bg-white h-16 rounded-xl drop-shadow-2xl bottom-5  ">
+      <div className=" sm:hidden fixed  left-5 right-5 bg-white h-16 rounded-xl drop-shadow-2xl bottom-5  ">
         <div className=" z-50 w-full h-full text-black text-2xl flex items-center justify-between px-2">
           <div
             onClick={() => setPage("home")}

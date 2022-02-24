@@ -1,8 +1,8 @@
 import React from "react";
 import Banner from "./SmallComponents/Banner";
 import Products from "./SmallComponents/Products";
-
-const HomeMain = ({ data }) => {
+import data from "../data.json";
+const HomeMain = () => {
   console.log(data);
   return (
     <div>
