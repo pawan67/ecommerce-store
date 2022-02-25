@@ -17,6 +17,8 @@ export const UserContextProvider = ({ children }) => {
   const [loading, setLoading] = useState();
   const [error, setError] = useState("");
   const [page, setPage] = useState("home");
+  const [isSearch, setIsSearch] = useState(false);
+
   useEffect(() => {
     const unsub = setLoading(true);
     onAuthStateChanged(auth, (res) => {
@@ -71,6 +73,8 @@ export const UserContextProvider = ({ children }) => {
     signInWithGoogle,
     page,
     setPage,
+    isSearch,
+    setIsSearch,
   };
   return (
     <UserContext.Provider value={contextValue}>{children}</UserContext.Provider>

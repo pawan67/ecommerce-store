@@ -2,12 +2,13 @@ import React from "react";
 import Banner from "./SmallComponents/Banner";
 import Products from "./SmallComponents/Products";
 import data from "../data.json";
+import { useUserContext } from "../context/userContext";
 const HomeMain = () => {
-  console.log(data);
+  const {isSearch, setIsSearch} = useUserContext()
   return (
-    <div>
+    <div className={` overflow-x-hidden transition-all ${isSearch ? " blur-md " : " "}`} >
       <Banner />
-      <div className="flex mt-3 flex-wrap gap-7 justify-center ">
+      <div className="flex mt-3  flex-wrap gap-7 justify-center ">
         {data.map(
           ({ id, category, description, title, image, price, rating }) => (
             <Products
