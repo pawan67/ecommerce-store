@@ -10,7 +10,7 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import { useEffect } from "react";
 // ..
-function cart() {
+function Cart() {
   useEffect(() => {
     AOS.init();
   });
@@ -59,4 +59,4 @@ function cart() {
   );
 }
 
-export default cart;
+export default Cart;
