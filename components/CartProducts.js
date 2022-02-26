@@ -1,17 +1,14 @@
 import React from "react";
-import Banner from "./SmallComponents/Banner";
+import CartProduct from "./SmallComponents/CartProduct";
 import Products from "./SmallComponents/Products";
-import data from "../data.json";
-import { useUserContext } from "../context/userContext";
-const HomeMain = () => {
-  const {isSearch, setIsSearch} = useUserContext()
+
+const CartProducts = ({ data }) => {
   return (
-    <div className={`  transition-all ${isSearch ? " blur-md " : " "}`} >
-      <Banner />
-      <div className=" flex mt-3  flex-wrap gap-5 sm:gap-7 justify-center  ">
+    <div>
+      <div>
         {data.map(
           ({ id, category, description, title, image, price, rating }) => (
-            <Products
+            <CartProduct
               key={id}
               category={category}
               title={title}
@@ -27,4 +24,4 @@ const HomeMain = () => {
   );
 };
 
-export default HomeMain;
+export default CartProducts;

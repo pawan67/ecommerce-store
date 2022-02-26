@@ -5,9 +5,14 @@
 
 * {
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  scrollbar-gutter: stable;
+  overflow-x: hidden
 }
 @layer components {
   .banner_ {
-    @apply rounded-2xl w-full shadow-md  ;
+    @apply rounded-2xl w-full shadow-md;
   }
 }

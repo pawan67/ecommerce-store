@@ -18,6 +18,7 @@ export const UserContextProvider = ({ children }) => {
   const [error, setError] = useState("");
   const [page, setPage] = useState("home");
   const [isSearch, setIsSearch] = useState(false);
+  const [isSignUp, setSignUp] = useState(true);
 
   useEffect(() => {
     const unsub = setLoading(true);
@@ -75,6 +76,8 @@ export const UserContextProvider = ({ children }) => {
     setPage,
     isSearch,
     setIsSearch,
+    isSignUp,
+    setSignUp,
   };
   return (
     <UserContext.Provider value={contextValue}>{children}</UserContext.Provider>
