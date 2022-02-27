@@ -8,9 +8,10 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 import { useEffect } from "react";
 import SignIn from "../components/SmallComponents/SignIn";
 import { useUserContext } from "../context/userContext";
+import AccountPage from "../components/AccountPage";
 const Account = () => {
   const { isSignUp, setSignUp } = useUserContext();
-  const { page, setPage } = useUserContext();
+  const { page, setPage, user } = useUserContext();
 
   useEffect(() => {
     AOS.init();
@@ -25,14 +26,18 @@ const Account = () => {
       <div className=" h-screen  w-screen     bg-[#ebeaef]">
         <div className=" max-w-7xl  mx-auto px-3 sm:px-5">
           <Header />
-          <div className=" mt-10 md:mt-32 md:space-x-5 flex justify-center items-center">
-            <img
-              className=" hidden md:block w-80"
-              src="images/register.svg"
-              alt=""
-            />
-            {isSignUp ? <SignUp /> : <SignIn />}
-          </div>
+          {user ? (
+            <AccountPage />
+          ) : (
+            <div className=" mt-10 md:mt-32 md:space-x-5 flex justify-center items-center">
+              <img
+                className=" hidden md:block w-80"
+                src="images/register.svg"
+                alt=""
+              />
+              {isSignUp ? <SignUp /> : <SignIn />}
+            </div>
+          )}
         </div>
       </div>
     </>

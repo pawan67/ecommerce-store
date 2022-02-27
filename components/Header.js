@@ -140,16 +140,16 @@ const Header = () => {
           <div
             onClick={() => {
               router.push("/collections");
-              setPage("collections");
+              setPage("collection");
             }}
             className={` transition-all flex space-x-2 ${
-              page === "collections" ? "bg-slate-200" : ""
+              page === "collection" ? "bg-slate-200" : ""
             }   p-3 rounded-2xl`}
           >
             <BsCollection />
             <p
               className={` transition-all text-base font-semibold ${
-                page === "collections" ? "block" : "hidden"
+                page === "collection" ? "block" : "hidden"
               }`}
             >
               Collections
