@@ -9,11 +9,15 @@ import { selectItems } from "../slices/basketSlice";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import { useEffect } from "react";
+import { useUserContext } from "../context/userContext";
 // ..
 function Cart() {
+  const { page, setPage } = useUserContext();
+
   useEffect(() => {
     AOS.init();
-  });
+    setPage("cart")
+  },[]);
   const items = useSelector(selectItems);
   const router = useRouter();
   return (
@@ -25,7 +29,7 @@ function Cart() {
       <div className="   w-screen    bg-[#ebeaef]">
         <div className=" max-w-7xl mx-auto px-3 sm:px-5">
           <Header />
-          <img data-aos="fade-down" className=" rounded-xl" src="banners/cartBanner.png" alt="" />
+          <img data-aos="fade-down" className=" mt-5 rounded-xl" src="banners/cartBanner.png" alt="" />
           <CartProducts data={items} />
           {items.length === 0 ? (
             <div className=" text-center mt-10">

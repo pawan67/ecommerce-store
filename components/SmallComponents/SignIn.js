@@ -9,7 +9,7 @@ const SignIn = () => {
     <div>
       {" "}
       <div
-        data-aos="flip-right"
+        data-aos="fade-down"
         className=" w-[90%] mx-auto  md:w-[400px] p-10 rounded-2xl drop-shadow-sm bg-white"
       >
         <h1 className=" font-bold text-xl">Sign In</h1>

@@ -3,10 +3,13 @@ import Banner from "./SmallComponents/Banner";
 import Products from "./SmallComponents/Products";
 import data from "../data.json";
 import { useUserContext } from "../context/userContext";
+import Alert from "./SmallComponents/Alert";
+import { useRouter } from "next/router";
 const HomeMain = () => {
-  const {isSearch, setIsSearch} = useUserContext()
+  const { alert, setAlert } = useUserContext();
+  const { isSearch, setIsSearch } = useUserContext();
   return (
-    <div className={`  transition-all ${isSearch ? " blur-md " : " "}`} >
+    <div className={`  transition-all ${isSearch ? " blur-md " : " "}`}>
       <Banner />
       <div className=" flex mt-3  flex-wrap gap-5 sm:gap-7 justify-center  ">
         {data.map(
@@ -23,6 +26,7 @@ const HomeMain = () => {
           )
         )}
       </div>
+      {alert && <Alert />}
     </div>
   );
 };

@@ -12,7 +12,10 @@ const CartProduct = ({
   rating,
 }) => {
   return (
-    <div className=" space-x-3 bg-gray-300 drop-shadow-sm rounded-xl my-5 p-3 flex items-center justify-between">
+    <div
+      data-aos="zoom-in"
+      className=" space-x-3 bg-gray-300 drop-shadow-sm rounded-xl my-5 p-3 flex items-center justify-between"
+    >
       <div className=" flex space-x-3 sm:space-x-6 items-center">
         <div className=" sm:w-40 sm:h-40  w-20 h-20 flex items-center p-4 justify-center bg-white rounded-xl">
           <img className=" w-20" src={image} alt="" />

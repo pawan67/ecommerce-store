@@ -1,6 +1,7 @@
 import React from "react";
 import { FcRating } from "react-icons/fc";
 import { useDispatch } from "react-redux";
+import { useUserContext } from "../../context/userContext";
 import { addToBasket } from "../../slices/basketSlice";
 const Products = ({
   id,
@@ -11,6 +12,8 @@ const Products = ({
   price,
   rating,
 }) => {
+  const { alert, setAlert } = useUserContext();
+
   const dispatch = useDispatch();
   const addItemToBasket = () => {
     const product = {
@@ -22,11 +25,20 @@ const Products = ({
       price,
       rating,
     };
-    dispatch(addToBasket(product))
+    dispatch(addToBasket(product));
+    setAlert(true);
   };
-  console.log(rating);
+  if (alert) {
+    setTimeout(() => {
+      setAlert(false);
+    }, 3000);
+  }
+
   return (
-    <div className="  cursor-pointer  w-[170px] sm:w-72 sm:hover:scale-105 transition-all   p-5 shadow-xl rounded-2xl bg-white ">
+    <div
+      data-aos="zoom-in"
+      className="  cursor-pointer  w-[170px] sm:w-72 sm:hover:scale-105 transition-all   p-5 shadow-xl rounded-2xl bg-white "
+    >
       <p className=" hidden sm:block text-xs">{category}</p>
       <div className=" flex justify-center items-center mb-5 h-32 sm:h-40">
         <img
@@ -50,7 +62,10 @@ const Products = ({
           <p>{rating.rate}</p>
         </div>
       </div>
-      <div onClick={addItemToBasket} className=" active:scale-95 text-sm bg-black p-2 cursor-pointer text-white text-center  rounded-xl mt-3">
+      <div
+        onClick={addItemToBasket}
+        className=" active:scale-95 text-sm bg-black p-2 cursor-pointer text-white text-center  rounded-xl mt-3"
+      >
         Add to Cart
       </div>
     </div>

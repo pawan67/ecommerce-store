@@ -35,7 +35,7 @@ const Header = () => {
     } else {
       setIsSearch(true);
     }
-    console.log(isSearch);
+    
   });
   return (
     <div className=" relative z-50">
@@ -48,22 +48,56 @@ const Header = () => {
 
           <p className=" hidden sm:block">ecommerce.</p>
         </div>
-        <div className=" hidden  text-lg  font-semibold sm:flex space-x-5">
-          <div onClick={() => router.push("/")} className=" cursor-pointer">
+        <div className=" hidden  text-lg items-center  font-semibold sm:flex space-x-5">
+          <div
+            onClick={() => {
+              router.push("/");
+              setPage("home");
+            }}
+            className={`cursor-pointer ${
+              page === "home"
+                ? "bg-gray-900 text-gray-100 px-3 py-1 rounded-xl shadow-lg"
+                : ""
+            } `}
+          >
             Home
           </div>
           <div
-            onClick={() => router.push("/collections")}
-            className=" cursor-pointer"
+            onClick={() => {
+              router.push("/collections");
+              setPage("collection");
+            }}
+            className={`cursor-pointer ${
+              page === "collection"
+                ? "bg-gray-900 text-gray-100 px-3 py-1 rounded-xl shadow-lg"
+                : ""
+            } `}
           >
             Collections
           </div>
-          <div onClick={() => router.push("/cart")} className=" cursor-pointer">
+          <div
+            onClick={() => {
+              router.push("/cart");
+              setPage("cart");
+            }}
+            className={`cursor-pointer ${
+              page === "cart"
+                ? "bg-gray-900 text-gray-100 px-3 py-1 rounded-xl shadow-lg"
+                : ""
+            } `}
+          >
             Cart
           </div>
           <div
-            onClick={() => router.push("/account")}
-            className=" cursor-pointer"
+            onClick={() => {
+              router.push("/account");
+              setPage("account");
+            }}
+            className={`cursor-pointer ${
+              page === "account"
+                ? "bg-gray-900 text-gray-100 px-3 py-1 rounded-xl shadow-lg"
+                : ""
+            } `}
           >
             Account
           </div>

@@ -6,7 +6,7 @@ const SignUp = () => {
   const { isSignUp, setSignUp } = useUserContext();
   return (
     <div
-      data-aos="flip-left"
+      data-aos="fade-up"
       className=" w-[90%]  md:w-[400px] p-10 rounded-2xl drop-shadow-sm bg-white"
     >
       <h1 className=" font-bold text-xl">Sign Up</h1>

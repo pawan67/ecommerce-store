@@ -7,11 +7,15 @@ import styles from "../styles/Home.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import { useEffect } from "react";
+import { useUserContext } from "../context/userContext";
 // ..
 export default function Home() {
+  const { page, setPage } = useUserContext();
+
   useEffect(() => {
     AOS.init();
-  });
+    setPage("home");
+  }, []);
   return (
     <>
       <Head>

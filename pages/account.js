@@ -10,8 +10,11 @@ import SignIn from "../components/SmallComponents/SignIn";
 import { useUserContext } from "../context/userContext";
 const Account = () => {
   const { isSignUp, setSignUp } = useUserContext();
+  const { page, setPage } = useUserContext();
+
   useEffect(() => {
     AOS.init();
+    setPage("account");
   });
   return (
     <>
