@@ -24,9 +24,9 @@ function Cart() {
     <>
       <Head>
         <link rel="icon" href="/images/logo.png" />
-        <title>Ecommerce - Online shopping website</title>
+        <title>Ecommercee - Online shopping website</title>
       </Head>
-      <div className="   w-screen    bg-[#ebeaef]">
+      <div className="   min-w-screen    bg-[#ebeaef]">
         <div className=" max-w-7xl mx-auto px-3 sm:px-5">
           <Header />
           <img data-aos="fade-down" className=" mt-5 rounded-xl" src="banners/cartBanner.png" alt="" />

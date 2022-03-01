@@ -128,7 +128,7 @@ const Footer = () => {
           "
               >
                   <img className=" w-10" src="images/logo.png" alt="" />
-                ecommerce.
+                ecommercee.
               </h6>
               <p>
               Integrating your business into the online retail industry as it continues to accelerate and change requires strong eCommerce website design. 

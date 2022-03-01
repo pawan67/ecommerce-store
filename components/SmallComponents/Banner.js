@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 const Banner = () => {
   return (
-    <div className="   sm:mt-5">
+    <div className=" px-3   sm:mt-5">
       <Swiper spaceBetween={10}>
         <SwiperSlide>
           <img className=" banner_" src="banners/banner1.jpg" alt="" />

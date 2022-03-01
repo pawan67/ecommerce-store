@@ -23,7 +23,7 @@ const Collections = () => {
     <>
       <Head>
         <link rel="icon" href="/images/logo.png" />
-        <title>Ecommerce - Online shopping website</title>
+        <title>Ecommercee - Online shopping website</title>
       </Head>
       <div className="  w-screen     bg-[#ebeaef]">
         <div className=" max-w-7xl mx-auto px-3 sm:px-5">
@@ -37,7 +37,7 @@ const Collections = () => {
                     setCollection("men");
                   }}
                   className=" cursor-pointer transition-all hover:shadow-2xl rounded-2xl shadow-xl"
-                  src="banners/men.png"
+                  src="banners/men.jpg"
                   alt=""
                 />
               </div>
@@ -48,7 +48,7 @@ const Collections = () => {
                     setCollection("women");
                   }}
                   className="transition-all hover:shadow-2xl  cursor-pointer rounded-2xl shadow-xl"
-                  src="banners/women.png"
+                  src="banners/women.jpg"
                   alt=""
                 />
               </div>
@@ -61,7 +61,7 @@ const Collections = () => {
                     setCollection("electronics");
                   }}
                   className="transition-all hover:shadow-2xl   cursor-pointer rounded-2xl shadow-xl"
-                  src="banners/electronics.png"
+                  src="banners/electronics.jpg"
                   alt=""
                 />
               </div>
@@ -72,7 +72,7 @@ const Collections = () => {
                     setCollection("jewelery");
                   }}
                   className="transition-all hover:shadow-2xl   cursor-pointer rounded-2xl shadow-xl"
-                  src="banners/jewelery.png"
+                  src="banners/jewelery.jpg"
                   alt=""
                 />
               </div>

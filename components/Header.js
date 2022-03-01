@@ -46,7 +46,7 @@ const Header = () => {
         >
           <img className=" -ml-1 w-14 sm:w-10" src="images/logo.png" alt="" />
 
-          <p className=" hidden sm:block">ecommerce.</p>
+          <p className=" hidden sm:block">ecommercee.</p>
         </div>
         <div className=" hidden  text-lg items-center  font-semibold sm:flex space-x-5">
           <div
