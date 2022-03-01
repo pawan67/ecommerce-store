@@ -108,7 +108,7 @@ const Header = () => {
         <div className=" w-full ml-0  sm:ml-3 sm:ml-0 px-5 sm:px-3 sm:w-auto py-3 p-2 space-x-2 flex items-center rounded-2xl drop-shadow-xl hover:drop-shadow-xl   bg-white dark:bg-[#3b3b3b]">
           <FiSearch />
           <input
-            className=""
+            
             onChange={(e) => searchItems(e.target.value)}
             className=" outline-none"
             placeholder="search products.."
