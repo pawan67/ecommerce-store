@@ -35,8 +35,8 @@ const Products = ({
   }
 
   return (
-    <div className="  cursor-pointer  w-[170px] sm:w-72 sm:hover:scale-105 transition-all   p-5 shadow-xl rounded-2xl bg-[#fff] ">
-      <p className=" hidden sm:block text-xs">{category}</p>
+    <div className="  cursor-pointer dark:brightness-75  w-[170px] sm:w-72 sm:hover:scale-105 transition-all   p-5 shadow-xl rounded-2xl dark:text-black bg-[#fff] ">
+      <p className="  hidden sm:block text-xs">{category}</p>
       <div className=" flex justify-center items-center mb-5 h-32 sm:h-40">
         <img
           className="  sm:my-4 mx-auto w-20 sm:w-28"

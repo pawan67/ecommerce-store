@@ -3,13 +3,13 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <footer className=" mt-14 text-center lg:text-left bg-gray-100 text-gray-600">
-        <div className="flex max-w-7xl mx-auto justify-center items-center lg:justify-between p-6 border-b border-gray-300">
+      <footer className=" mt-14 text-center lg:text-left bg-gray-100 dark:bg-[#202020]  dark:text-white text-gray-600">
+        <div className="flex max-w-7xl mx-auto justify-center items-center lg:justify-between p-6 border-b border-gray-300 dark:border-gray-700">
           <div className="mr-12 hidden lg:block">
             <span>Get connected with us on social networks:</span>
           </div>
           <div className="flex justify-center">
-            <a href="#!" className="mr-6 text-gray-600">
+            <a href="#!" className="mr-6 dark:text-white text-gray-600">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -26,7 +26,7 @@ const Footer = () => {
                 ></path>
               </svg>
             </a>
-            <a href="#!" className="mr-6 text-gray-600">
+            <a href="#!" className="mr-6  dark:text-white text-gray-600">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -43,7 +43,7 @@ const Footer = () => {
                 ></path>
               </svg>
             </a>
-            <a href="#!" className="mr-6 text-gray-600">
+            <a href="#!" className="mr-6  dark:text-white text-gray-600">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -60,7 +60,7 @@ const Footer = () => {
                 ></path>
               </svg>
             </a>
-            <a href="#!" className="mr-6 text-gray-600">
+            <a href="#!" className="mr-6  dark:text-white text-gray-600">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -77,7 +77,7 @@ const Footer = () => {
                 ></path>
               </svg>
             </a>
-            <a href="#!" className="mr-6 text-gray-600">
+            <a href="#!" className="mr-6  dark:text-white text-gray-600">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -94,7 +94,7 @@ const Footer = () => {
                 ></path>
               </svg>
             </a>
-            <a href="#!" className="text-gray-600">
+            <a href="#!" className="dark:text-white text-gray-600">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -127,11 +127,13 @@ const Footer = () => {
             md:justify-start
           "
               >
-                  <img className=" w-10" src="images/logo.png" alt="" />
+                <img className=" w-10" src="images/logo.png" alt="" />
                 ecommercee.
               </h6>
               <p>
-              Integrating your business into the online retail industry as it continues to accelerate and change requires strong eCommerce website design. 
+                Integrating your business into the online retail industry as it
+                continues to accelerate and change requires strong eCommerce
+                website design.
               </p>
             </div>
             <div className="">
@@ -139,22 +141,22 @@ const Footer = () => {
                 Products
               </h6>
               <p className="mb-4">
-                <a href="#!" className="text-gray-600">
+                <a href="#!" className="dark:text-white text-gray-600">
                   Electornics
                 </a>
               </p>
               <p className="mb-4">
-                <a href="#!" className="text-gray-600">
+                <a href="#!" className="dark:text-white text-gray-600">
                   Households
                 </a>
               </p>
               <p className="mb-4">
-                <a href="#!" className="text-gray-600">
+                <a href="#!" className="dark:text-white text-gray-600">
                   Kitchen
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-gray-600">
+                <a href="#!" className="dark:text-white text-gray-600">
                   Fashion
                 </a>
               </p>
@@ -164,22 +166,22 @@ const Footer = () => {
                 Useful links
               </h6>
               <p className="mb-4">
-                <a href="#!" className="text-gray-600">
+                <a href="#!" className="dark:text-white text-gray-600">
                   Pricing
                 </a>
               </p>
               <p className="mb-4">
-                <a href="#!" className="text-gray-600">
+                <a href="#!" className="dark:text-white text-gray-600">
                   Settings
                 </a>
               </p>
               <p className="mb-4">
-                <a href="#!" className="text-gray-600">
+                <a href="#!" className="dark:text-white text-gray-600">
                   Orders
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-gray-600">
+                <a href="#!" className="dark:text-white text-gray-600">
                   Help
                 </a>
               </p>
@@ -263,10 +265,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="text-center p-6 bg-gray-200">
+        <div className="text-center p-6 dark:bg-[#191919]  bg-gray-200 pb-28 sm:pb-0 ">
           <span>© 2021 Copyright:</span>
           <a
-            className="text-gray-600 ml-2 font-semibold"
+            className="dark:text-white text-gray-600 ml-2 font-semibold"
             href="https://pawan67.vercel.app/"
           >
             Pawan67

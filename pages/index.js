@@ -22,7 +22,7 @@ export default function Home() {
         <link rel="icon" href="/images/logo.png" />
         <title>Ecommercee - Online shopping website</title>
       </Head>
-      <div className=" w-screen    bg-[#ebeaef]">
+      <div className=" w-screen dark:bg-[#191919]    bg-[#ebeaef]">
         <div className=" max-w-7xl mx-auto px-3 sm:px-5">
           <Header />
           <HomeMain />

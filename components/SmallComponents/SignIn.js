@@ -20,7 +20,7 @@ const SignIn = () => {
       {" "}
       <div
         data-aos="fade-down"
-        className=" w-[90%] mx-auto  md:w-[400px] p-10 rounded-2xl drop-shadow-sm bg-white"
+        className=" w-[90%] mx-auto  md:w-[400px] p-10 rounded-2xl drop-shadow-sm  dark:bg-[#302f2f] bg-white"
       >
         <h1 className=" font-bold text-xl">Sign In</h1>
         <form onSubmit={onSubmit}>
@@ -37,13 +37,13 @@ const SignIn = () => {
             />
             <div
               onClick={signInWithGoogle}
-              className=" cursor-pointer active:scale-95 flex justify-center items-center space-x-2 w-full bg-gray-100 drop-shadow-md font-medium p-3 rounded-xl"
+              className=" cursor-pointer active:scale-95 flex justify-center items-center space-x-2 w-full bg-gray-100 dark:text-black drop-shadow-md font-medium p-3 rounded-xl"
             >
               <FcGoogle className=" text-xl" /> <p>Sign in with Google</p>
             </div>
             <button
               type="submit"
-              className=" transition-all active:scale-95 hover:bg-gradient-to-l hover:from-black hover:to-yellow-500 float-right bg-gray-900 text-white p-3 rounded-xl px-5"
+              className=" transition-all active:scale-95 hover:bg-gradient-to-l hover:from-black hover:to-yellow-500 float-right dark:bg-[#191919] bg-gray-900 text-white p-3 rounded-xl px-5"
             >
               Sign In
             </button>

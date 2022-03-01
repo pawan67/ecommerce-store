@@ -13,6 +13,6 @@ body {
 }
 @layer components {
   .banner_ {
-    @apply rounded-2xl w-full shadow-md;
+    @apply rounded-2xl w-full shadow-md dark:brightness-75;
   }
 }
