@@ -35,10 +35,7 @@ const Products = ({
   }
 
   return (
-    <div
-      data-aos="zoom-in"
-      className="  cursor-pointer  w-[170px] sm:w-72 sm:hover:scale-105 transition-all   p-5 shadow-xl rounded-2xl bg-[#fff] "
-    >
+    <div className="  cursor-pointer  w-[170px] sm:w-72 sm:hover:scale-105 transition-all   p-5 shadow-xl rounded-2xl bg-[#fff] ">
       <p className=" hidden sm:block text-xs">{category}</p>
       <div className=" flex justify-center items-center mb-5 h-32 sm:h-40">
         <img
