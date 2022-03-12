@@ -105,10 +105,9 @@ const Header = () => {
             Account
           </div>
         </div>
-        <div className=" w-full ml-0  sm:ml-3 sm:ml-0 px-5 sm:px-3 sm:w-auto py-3 p-2 space-x-2 flex items-center rounded-2xl drop-shadow-xl hover:drop-shadow-xl   bg-white dark:bg-[#3b3b3b]">
+        <div className=" w-full   sm:ml-3 ml-0 px-5 sm:px-3 sm:w-auto py-3 p-2 space-x-2 flex items-center rounded-2xl drop-shadow-xl hover:drop-shadow-xl   bg-white dark:bg-[#3b3b3b]">
           <FiSearch />
           <input
-            
             onChange={(e) => searchItems(e.target.value)}
             className=" outline-none"
             placeholder="search products.."
@@ -119,7 +118,7 @@ const Header = () => {
             className={` ${isSearch ? "" : "hidden"} text-xl`}
           />
         </div>
-        <div className=" cursor-pointer text-xl border-2 rounded-md border-gray-700 p-1 ml-3 sm:ml-0 ">
+        <div className=" bg-white shadow-xl active:shadow-2xl cursor-pointer text-2xl text-black dark:text-white dark:bg-[#3b3b3b]  rounded-full  p-2 ml-3 sm:ml-0 ">
           {theme === "light" ? (
             <MdOutlineDarkMode onClick={() => setTheme("dark")} />
           ) : (

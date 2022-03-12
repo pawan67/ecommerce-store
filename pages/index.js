@@ -9,6 +9,8 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 import { useEffect } from "react";
 import { useUserContext } from "../context/userContext";
 // ..
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 export default function Home() {
   const { page, setPage } = useUserContext();
 
