@@ -8,10 +8,12 @@ import { FcRating } from "react-icons/fc";
 const ProductDetail = () => {
   const router = useRouter();
   const productId = router.query.productId;
-  const [productData, setData] = useState(data[productId - 1]);
+  const [productData, setData] = useState(data[1]);
 
   useEffect(() => {
-    setData(data[productId - 1]);
+    if (productId) {
+      setData(data[productId - 1]);
+    }
   }, []);
   console.log(productData);
 
