@@ -127,15 +127,15 @@ const Header = () => {
         </div>
       </div>
       <div className=" sm:hidden fixed  left-5 right-5 bg-white dark:bg-[#1d1c1c]  h-16 rounded-3xl drop-shadow-2xl   bottom-5  ">
-        <div className="   z-50 w-full h-full  text-2xl flex items-center justify-between px-2 dark:text-white text-black">
+        <div className="   z-50 w-full h-full  text-xl flex items-center justify-between px-2   text-black">
           <div
             onClick={() => {
               router.push("/");
               setPage("home");
             }}
             className={` flex space-x-2 ${
-              page === "home" ? "bg-slate-200 dark:bg-gray-400" : ""
-            }   p-3 rounded-2xl transition-all `}
+              page === "home" ? "bg-slate-200 dark:bg-gray-400" : "dark:text-white"
+            }   p-3 rounded-2xl  items-center transition-all `}
           >
             <RiHomeLine />
             <p
@@ -153,8 +153,10 @@ const Header = () => {
               setPage("collection");
             }}
             className={` transition-all flex space-x-2 ${
-              page === "collection" ? "bg-slate-200 dark:bg-gray-400" : ""
-            }   p-3 rounded-2xl`}
+              page === "collection"
+                ? "bg-slate-200 dark:bg-gray-400"
+                : "dark:text-white"
+            }   p-3 rounded-2xl `}
           >
             <BsCollection />
             <p
@@ -171,7 +173,9 @@ const Header = () => {
               setPage("cart");
             }}
             className={` transition-all flex space-x-2 ${
-              page === "cart" ? "bg-slate-200 dark:bg-gray-400" : ""
+              page === "cart"
+                ? "bg-slate-200 dark:bg-gray-400"
+                : "dark:text-white"
             }   p-3 rounded-2xl`}
           >
             <AiOutlineShoppingCart />
@@ -189,7 +193,7 @@ const Header = () => {
               setPage("account");
             }}
             className={` transition-all flex space-x-2 ${
-              page === "account" ? "bg-slate-200 dark:bg-gray-400" : ""
+              page === "account" ? "bg-slate-200 dark:bg-gray-400" : "dark:text-white"
             }   p-3 rounded-2xl`}
           >
             <BsPerson />

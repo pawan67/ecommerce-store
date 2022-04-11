@@ -22,6 +22,7 @@ const HomeMain = () => {
               image={image}
               price={price}
               rating={rating}
+              id={id}
             />
           )
         )}

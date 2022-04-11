@@ -20,6 +20,7 @@ export const UserContextProvider = ({ children }) => {
   const [isSearch, setIsSearch] = useState(false);
   const [isSignUp, setSignUp] = useState(true);
   const [alert, setAlert] = useState(false);
+  const [ productD, setProductD] = useState(null);
   useEffect(() => {
     const unsub = setLoading(true);
     onAuthStateChanged(auth, (res) => {
@@ -80,6 +81,7 @@ export const UserContextProvider = ({ children }) => {
     setSignUp,
     alert,
     setAlert,
+    productD, setProductD
   };
   return (
     <UserContext.Provider value={contextValue}>{children}</UserContext.Provider>

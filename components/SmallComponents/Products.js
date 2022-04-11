@@ -3,7 +3,7 @@ import { FcRating } from "react-icons/fc";
 import { useDispatch } from "react-redux";
 import { useUserContext } from "../../context/userContext";
 import { addToBasket } from "../../slices/basketSlice";
-
+import { useRouter } from "next/router";
 const Products = ({
   id,
   category,
@@ -13,7 +13,7 @@ const Products = ({
   price,
   rating,
 }) => {
-  const { alert, setAlert } = useUserContext();
+  const { alert, setAlert, productD, setProductD } = useUserContext();
 
   const dispatch = useDispatch();
   const addItemToBasket = () => {
@@ -34,12 +34,14 @@ const Products = ({
       setAlert(false);
     }, 3000);
   }
+  const router = useRouter();
 
   return (
     <div className="  cursor-pointer dark:brightness-75  w-[170px] sm:w-72 sm:hover:scale-105 transition-all   p-5 shadow-xl rounded-2xl dark:text-black bg-[#fff] ">
       <p className="  hidden sm:block text-xs">{category}</p>
       <div className=" flex justify-center items-center mb-5 h-32 sm:h-40">
         <img
+          onClick={() => router.push(`/${id}`)}
           className="  sm:my-4 mx-auto w-20 sm:w-28"
           src={image}
           alt={title}
